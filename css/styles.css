@@ -1,0 +1,69 @@
+body{
+    margin: 0px;
+    padding: 50px 0px 0px 0px;
+    height: 100vh;
+    z-index: 0;
+}
+
+
+.navbar{
+    min-height: 24px;
+}
+
+.navbar:before,
+.navbar:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  top: 3;
+  margin-left: 600px;
+  width: 350px;
+}
+
+.navbar a {
+    font-size: 22px;
+}
+
+.navbar-brand img{
+    height: 50px;
+}
+
+.jumbotron {
+    margin-top: 0px auto;
+    padding: 70px 30px;
+    background-image: linear-gradient(to down, #b3b3b3, #f2f2f2);
+
+    
+}
+
+.navbar-dark {
+    background-color: #512da8; 
+}
+
+#particles-js{
+    margin-top: 20px;
+    height: 500px;
+    background: #7252bb;
+    color: #ffffff;
+}
+ 
+.row-content-img{
+    position: absolute;  
+   
+    margin-top: -100px;
+    z-index: 9;
+}
+
+.olap{
+    height: 250px;
+    width: 250px;
+    display: inline;
+    margin-left: 100px;
+}
+
+span{
+    padding-left: 40px;
+
+}
