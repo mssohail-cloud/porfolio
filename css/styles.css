@@ -5,6 +5,11 @@ body{
     z-index: 0;
 }
 
+@keyframes example {
+    from {background-color: #a78ff1;}
+    to {background-color: #512da8;}
+  }
+
 
 .navbar{
     min-height: 24px;
@@ -45,19 +50,23 @@ body{
 #particles-js{
     margin-top: 20px;
     height: 500px;
-    background: #7252bb;
+    background: #a78ff1;
     color: #ffffff;
+    animation-name: example;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
 }
  
 .row-content-img{
     position: absolute;  
    
-    margin-top: -100px;
+    margin-top: -40px;
     z-index: 9;
 }
 
 .olap{
-    height: 250px;
+    height: 200px;
     width: 250px;
     display: inline;
     margin-left: 100px;
@@ -66,4 +75,31 @@ body{
 span{
     padding-left: 40px;
 
+}
+
+@-webkit-keyframes swinging{
+    0%{-webkit-transform: rotate(10deg);}
+    50%{-webkit-transform: rotate(-5deg)}
+    100%{-webkit-transform: rotate(10deg);}
+}
+ 
+@keyframes swinging{
+    0%{transform: rotate(10deg);}
+    50%{transform: rotate(-5deg)}
+    100%{transform: rotate(10deg);}
+}
+ 
+.swingimage{
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+    animation: swinging 3.5s ease-in-out forwards infinite;
+}
+
+.marginTop {
+    margin-top: 200px;
+}
+
+hr.dash {
+    border-top: 1px dashed #0d0d0d;
 }
