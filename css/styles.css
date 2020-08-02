@@ -1,103 +1,55 @@
-body{
-    margin: 0px;
-    padding: 50px 0px 0px 0px;
-    height: 100vh;
-    z-index: 0;
+.view {
+    background: url("/Images/theme.jpg")no-repeat center center;
+    background-size: cover;
+    height: 600px;
 }
 
-@keyframes example {
-    from {background-color: #a78ff1;}
-    to {background-color: #512da8;}
-  }
-
-
-.navbar{
-    min-height: 24px;
+.navbar {
+    background-color: transparent;
 }
 
-.navbar:before,
-.navbar:after {
-  content: "";
-  position: absolute;
-  height: 5px;
-  border-bottom: 1px solid white;
-  border-top: 1px solid white;
-  top: 3;
-  margin-left: 600px;
-  width: 350px;
+.navbar {
+    position: relative;
 }
 
-.navbar a {
-    font-size: 22px;
-}
-
-.navbar-brand img{
-    height: 50px;
-}
-
-.jumbotron {
-    margin-top: 0px auto;
-    padding: 70px 30px;
-    background-image: linear-gradient(to down, #b3b3b3, #f2f2f2);
-
+.navbar a{
+    font-size: 24px;
+    font-weight: 700px;
     
 }
 
-.navbar-dark {
-    background-color: #512da8; 
+.row-content {
+    margin: 0px auto;
+    padding: 50px 0px;
+    border-bottom: 1px ridge;
+    min-height: 200px; }
+
+.text-center {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.top-nav-collapse {
+    background-color: #4285F4;
 }
 
-#particles-js{
-    margin-top: 20px;
-    height: 500px;
-    background: #a78ff1;
-    color: #ffffff;
-    animation-name: example;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: forwards;
-}
- 
-.row-content-img{
-    position: absolute;  
-   
-    margin-top: -40px;
-    z-index: 9;
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #4285F4;
+    }
 }
 
-.olap{
-    height: 200px;
-    width: 250px;
-    display: inline;
-    margin-left: 100px;
+html,
+body
+ {
+  height: 100%;
 }
 
-span{
-    padding-left: 40px;
+.marginTB {
+    margin: 100px auto;
 
-}
-
-@-webkit-keyframes swinging{
-    0%{-webkit-transform: rotate(10deg);}
-    50%{-webkit-transform: rotate(-5deg)}
-    100%{-webkit-transform: rotate(10deg);}
-}
- 
-@keyframes swinging{
-    0%{transform: rotate(10deg);}
-    50%{transform: rotate(-5deg)}
-    100%{transform: rotate(10deg);}
-}
- 
-.swingimage{
-    -webkit-transform-origin: 50% 0;
-    transform-origin: 50% 0;
-    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
-    animation: swinging 3.5s ease-in-out forwards infinite;
-}
-
-.marginTop {
-    margin-top: 200px;
 }
 
 hr.dash {
